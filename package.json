@@ -1,0 +1,13 @@
+{
+  "name": "plex-remote",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/naveengovind/plex-remote.git",
+  "author": "naveengovind <36118508+naveengovind@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "robotjs": "^0.6.0"
+  }
+}
