@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000" />
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>Remote</title>
+    <style>
+        .grid {
+            display: flex;                       /* establish flex container */
+            flex-wrap: wrap;                     /* enable flex items to wrap */
+            justify-content: space-around;
+
+        }
+        .cell {
+            flex: 0 0 30%;                       /* don't grow, don't shrink, width */
+            height: 275px;
+            margin-bottom: 5px;
+        }
+        #tm, #bm, #mr, #ml {
+            background-color: #F00;
+        }
+        #mm{
+            background-color: pink;
+        }
+    </style>
+    <script src="/static/script.js" type="module"></script>
+</head>
+<body>
+<div class="grid">
+    <div class="cell" id="tl">
+        <div id="tl-top" style="float:top; height: 50%; background-color: aqua">
+            back
+        </div>
+        <div id="tl-bottom" style="float:bottom;background-color: lawngreen; height: 50%;">
+            home
+        </div>
+    </div>
+    <div class="cell" id="tm">
+        up
+    </div>
+    <div class="cell" id="tr">
+        <div id="tr-top" style="float:top; height: 50%; background-color: aqua">
+            volume up
+        </div>
+        <div id="tr-bottom" style="float:bottom;background-color: lawngreen; height: 50%;">
+            volume down
+        </div>
+    </div>
+    <div class="cell" id="ml">
+        left
+    </div>
+    <div class="cell" id="mm">
+        enter
+    </div>
+    <div class="cell" id="mr">
+        middle right
+    </div>
+    <div class="cell" id="bl">
+        <div id="bl-top" style="float:top; height: 50%; background-color: aqua">
+            play/pause
+        </div>
+        <div id="bl-bottom" style="float:bottom;background-color: lawngreen; height: 50%;">
+            TODO
+        </div>
+    </div>
+    <div class="cell" id="bm">
+        bottom middle
+    </div>
+    <div class="cell" id = br>
+        <div id="br-top" style="float:top; height: 50%; background-color: aqua">
+            seek forward
+        </div>
+        <div id="br-bottom" style="float:bottom;background-color: lawngreen; height: 50%;">
+            seek backward
+        </div>
+    </div>
+</div>
+</body>
+</html>
